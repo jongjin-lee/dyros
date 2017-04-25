@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<script type="text/javascript" language="JavaScript">
+           var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 
+					'Windows CE', 'Windows CE;', 'LG', 'SAMSUNG', 
+					'MOT', 'SonyEricsson', 'Mobile', 'Symbian', 
+					'Opera Mobi', 'Opera Mini', 'IEmobile');
+           for (var word in mobileKeyWords){
+               if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+                         parent.window.location.href = "/home/main";
+                   break;
+                     }
+           }
+</script>
+<body>
+	<div class="fit_main">
+		<div class="main_frame second">
+			<div class="main_frame">
+				<iframe class="frame-border" src="/home/main" frameborder="0" name="naver"></iframe>
+			</div>
+		</div>
+	</div>
+</body>
