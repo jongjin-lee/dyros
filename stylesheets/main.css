@@ -263,18 +263,6 @@ li.circle:nth-child(4),li.circle:nth-child(5) {
     color: #fff;
 }
 
-.nav-name {
-    float: left;
-    width: 33.333%;
-    text-align: center;
-}
-
-.nav-name h5 {
-	font-family: 'Montserrat';
-	position: relative;
-    top: 2px;
-    font-size: 26px;
-}
 
 h5.pro-link {
     padding-top: 8px;
