@@ -6,11 +6,9 @@
       font-family: Arial, Helvetica;
     }
 */
-
     .big {
       font-size: 1.2em;
     }
-    
     .square {
       width: .7em;
       height: .7em;
@@ -18,7 +16,6 @@
       background-color: #006dcc ;
       display: inline-block;
     }
-    
     /* Custom dropdown */
     .custom-dropdown {
       position: relative;
@@ -27,7 +24,6 @@
       margin-top: 5px; /* demo only */
       margin-left: 5px;
     }
-    
     .custom-dropdown select {
       background-color: #1abc9c;
       color: #fff;
@@ -41,14 +37,12 @@
       text-overflow: '';
       -webkit-appearance: button; /* hide default arrow in chrome OSX */
     }
-    
     .custom-dropdown::before,
     .custom-dropdown::after {
       content: "";
       position: absolute;
       pointer-events: none;
     }
-    
     .custom-dropdown::after { /*  Custom dropdown arrow */
       content: "\25BC";
       height: 1em;
@@ -58,7 +52,6 @@
       top: 50%;
       margin-top: -.5em;
     }
-    
     .custom-dropdown::before { /*  Custom dropdown arrow cover */
       width: 2em;
       right: 0;

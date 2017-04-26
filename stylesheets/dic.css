@@ -2446,16 +2446,16 @@
 
     .elename {
         color: white;
-        font-size: 25px !important;
+        font-size: 21px !important;
         font-weight: 200 !important;
     }
 
     .element-item {
       position: relative;
       float: left;
-      width: 160px;
-      height: 160px;
-      margin: 10px;
+      width: 150px;
+      height: 150px;
+      margin: 8.5px;
       padding: 15px;
       background: #888;
       color: #262524;
@@ -2489,8 +2489,8 @@
     .element-item .symbol01 {
       position: absolute;
       left: 20px;
-      top: 58px;
-      font-size: 38px;
+      top: 52px;
+      font-size: 30px;
       font-weight: bold;
       color: white;
     }
@@ -2517,7 +2517,7 @@
     .element-item.transition01 {
         background-color: #006dcc;
         border-radius: 8px;
-        margin-top:208px;
+        margin-top:178px;
         cursor:pointer;
     }
     .element-item.transition011 {
@@ -2530,22 +2530,23 @@
         background-color: #ffbb47;
         border-radius: 8px;
         cursor:pointer;
-        margin-top:220px;
-        width: 565px;
+        margin-top:177px;
+        width: 656px;
     }
     .element-item.transition021 {
         background-color: #ffbb47;
         border-radius: 8px;
         cursor:pointer;
-        margin-top:10px;
-        width: 565px;
+        margin-top: 10px;
+        margin-left: 7px;
+        width: 656px;
     }
     .element-item.transition022 {
         background-color: #ffbb47;
         border-radius: 8px;
         cursor:pointer;
-        margin-top:10px;
-        width:400px;
+        margin-top: 177.5px;
+        width: 480px;
     }
     .element-item.transition03 {
         background-color: #006dcc;
@@ -2588,7 +2589,7 @@
         border: none !important;
         margin-left: 93px;
         margin: 30px auto;
-        max-width: 720px;
+        max-width: 670px;
         height: 50%;
     }
     /*하단 여백용*/
@@ -2601,7 +2602,7 @@
         height: 120px;
         min-width :768px;
         padding: 17px 0;
-        background:#006dcc!important;
+        background: #006dcc!important;
     }
 
     .main-shade{
@@ -2613,10 +2614,16 @@
         min-width :800px;
     }
     #CntE3 {
-        width: 172px;
-        height: 172px;
-        margin-left: 6.5px;
-        margin-top: 8px;
+        width: 152px;
+        height: 150px;
+        float: left;
+        margin-top: 178px;
+        margin-right: 12px;
+        left: 4px;
+    } 
+    #CntE33 {
+        width: 152px;
+        height: 150px;
     }
     #path {
         margin: 15px auto 20px auto;
