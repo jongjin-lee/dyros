@@ -24,7 +24,7 @@
     }
     .dicfoot {
         position: relative;
-        height: 300px;
+        height: 150px;
         background: white;
     }
     .hohoho {
@@ -181,9 +181,11 @@
         padding: 17px 0;
         background:#006dcc!important;
     }
-    .nav-img {
-      height: 43px;
-      margin-top: 2px;
+    .nav-img01 {
+        height: 43px;
+    }
+    .nav-img02 {
+        height: 43px;
     }
     .main-shade{
         padding: 0px 0 0;
@@ -265,9 +267,8 @@
     #slide5:checked ~ #controls label:nth-child(1) {
     	background: url('images/next.png') no-repeat;
     	float: right;
-    	/*margin: -158px -3px 0px 0;*/
     	position: absolute;
-        left: 213px;
+        right: 3px;
         top: 83px;
     	display: block;
     	background-color:rgba(207, 207, 209, 0.75);
@@ -522,13 +523,17 @@
         padding: 17px 0;
         background:#006dcc!important;
     }
-    .nav-img {
-      height: 50px;
+    .nav-img01 {
+        height: 50px;
+    }
+    .nav-img02 {
+        height: 50px;
     }
     .main-shade{
         padding: 0px 0 0;
         background:#fff;
     }
+    
     .main-shade,.main-body{
         min-height:536px;
         min-width :355px;
@@ -601,9 +606,8 @@
     #slide5:checked ~ #controls label:nth-child(1) {
     	background: url('images/next.png') no-repeat;
     	float: right;
-    	/*margin: -158px -3px 0px 0;*/
     	position: absolute;
-        left: 229px;
+        right: 3px;
         top: 83px;
     	display: block;
     	background-color:rgba(207, 207, 209, 0.75);
@@ -856,8 +860,11 @@
         padding-top: 15px;
         background:#006dcc!important;
     }
-    .nav-img {
-      height: 50px;
+    .nav-img01 {
+        height: 50px;
+    }
+    .nav-img02 {
+        height: 50px;
     }
     .main-shade{
         padding: 0px 0 0;
@@ -936,9 +943,8 @@
     #slide5:checked ~ #controls label:nth-child(1) {
     	background: url('images/next.png') no-repeat;
     	float: right;
-    	/*margin: -158px -3px 0px 0;*/
     	position: absolute;
-        left: 245px;
+        right: 3px;
         top: 83px;
     	display: block;
     	background-color:rgba(207, 207, 209, 0.75);
@@ -1192,8 +1198,11 @@
         padding: 17px 0;
         background:#006dcc!important;
     }
-    .nav-img {
-      height: 50px;
+    .nav-img01 {
+        height: 50px;
+    }
+    .nav-img02 {
+        height: 50px;
     }
     .main-shade{
         padding: 0px 0 0;
@@ -1273,9 +1282,8 @@
     #slide5:checked ~ #controls label:nth-child(1) {
     	background: url('images/next.png') no-repeat;
     	float: right;
-    	/*margin: -158px -3px 0px 0;*/
     	position: absolute;
-        left: 245px;
+        right: 3px;
         top: 83px;
     	display: block;
     	background-color:rgba(207, 207, 209, 0.75);
@@ -1539,8 +1547,11 @@
         padding: 15px 0;
         background:#006dcc!important;
     }
-    .nav-img {
-      height: 50px;
+    .nav-img01 {
+        height: 50px;
+    }
+    .nav-img02 {
+        height: 50px;
     }
     .main-shade{
         padding: 0px 0 0;
@@ -1621,9 +1632,8 @@
     #slide5:checked ~ #controls label:nth-child(1) {
     	background: url('images/next.png') no-repeat;
     	float: right;
-    	/*margin: -158px -3px 0px 0;*/
     	position: absolute;
-        left: 295px;
+        right: 3px;
         top: 107px;
     	display: block;
     	background-color:rgba(207, 207, 209, 0.75);
@@ -1880,9 +1890,11 @@
         padding: 17px 0;
         background:#006dcc!important;
     }
-    .nav-img {
-      height: 80px;
-
+    .nav-img01 {
+        height: 80px;
+    }
+    .nav-img02 {
+        height: 80px;
     }
     .main-shade{
         padding: 22px 0 0 0;
@@ -1970,7 +1982,7 @@
     	background: url('images/next.png') no-repeat;
     	float: right;
     	position: absolute;
-        left: 548px;
+        right: 3px;
         top: 200px;
     	display: block;
     	background-color:rgba(207, 207, 209, 0.75);
@@ -2232,8 +2244,11 @@
         padding: 23px 0;
         background:#006dcc!important;
     }
-    .nav-img {
-      height: 100px;
+    .nav-img01 {
+        height: 100px;
+    }
+    .nav-img02 {
+        height: 100px;
     }
     .main-shade{
         padding: 22px 0 0 0;
@@ -2320,7 +2335,7 @@
         height: 80px;
         float: right;
     	position: absolute;
-        left: 716px;
+        right: 3px;
         top: 250px;
     	display: block;
     	background-color:rgba(207, 207, 209, 0.75);
@@ -2650,11 +2665,12 @@
         -moz-border-radius: 13px;
         -o-border-radius: 13px;
         border: 6px solid #006dcc;
-        width: 36%;
-        height: 390px;
-        margin: auto;
+        width: 48%;
+        height: 385px;
+        margin: auto auto;
         text-align: center;
     }
+    
 
     #main_img1 {
         width:270px;
@@ -2680,8 +2696,8 @@
         background: url('images/next.png') no-repeat;
         float: right;
         position: absolute;
-        left: 450px;
         top: 155px;
+        right: 5px;
         display: block;
         background-color:rgba(207, 207, 209, 0.75);
         border-radius: 50%;
@@ -2751,6 +2767,6 @@
         position: absolute;
         width: 20%;
         top: 190px;
-        left: 415px;
+        left: 200px;
     }
 }
