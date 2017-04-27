@@ -27,13 +27,6 @@
         height: 150px;
         background: white;
     }
-    .hohoho {
-        border: none !important;
-        margin-left: 23px;
-        margin-top: -4px;
-        width: 94%;
-        height: 50%;
-    }
     .elename {
         color: white;
         font-size: 12.5px !important;
@@ -103,6 +96,18 @@
         cursor:pointer;
         margin-top: 95px;
     }
+    .element-item.transition11 {
+        background-color: #006dcc;
+        border-radius: 8px;
+        cursor:pointer;
+        margin-top: 95px;
+    }
+    .element-item.transition111 {
+        background-color: #006dcc;
+        border-radius: 8px;
+        cursor:pointer;
+        margin-top: 95px;
+    }
     .element-item.transition011 {
         background-color: #006dcc;
         border-radius: 8px;
@@ -114,14 +119,16 @@
         border-radius: 8px;
         cursor:pointer;
         margin-top: 95px;
-        width: 264px;
+        margin-left: 2px;
+        width: 266px;
     }
     .element-item.transition021 {
         background-color: #ffbb47;
         border-radius: 8px;
         cursor:pointer;
+        margin-left:2px;
         margin-top: 4px;
-        width: 264px;
+        width: 268px;
     }
     .element-item.transition022 {
         background-color: #ffbb47;
@@ -133,7 +140,7 @@
     .element-item.transition03 {
         background-color: #006dcc;
         border-radius: 8px;
-        margin-top: 8px;
+        margin-top: 9px;
         cursor:pointer;
     }
     .btn_cat {
@@ -153,6 +160,14 @@
         left: 100px;
         bottom: 2px;
     }
+
+    .hohoho {
+        border: none !important;
+        margin: -4px auto 0px auto;
+        width: 275px;
+        height: 50%;
+    }
+
     #food_han {
         background: none;
         border-radius: 13px;
@@ -160,14 +175,11 @@
     	  -moz-border-radius: 13px;
     	   -o-border-radius: 13px;
         border: 2px solid #006dcc;
-        width: 80%;
-        margin: 0 auto;
+        width: 238px;
     	font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
         color: #616564;
-        font-size: 1.05em;
-        margin-top: 11px;
-        margin-left: 42px;
-        margin-bottom: 0px;
+        font-size: 0.5em;
+        margin: 11px auto 0px auto;
         height: 62.5px;
     }
     /*하단 여백용*/
@@ -195,12 +207,18 @@
         min-height:475px;
         min-width :320px;
     }
+
     #CntE3 {
         width: 83px;
         height: 83px;
-        margin-left: 0px;
-        margin-top: -1px;
+        margin-left: 5px;
+        margin-top: 3px;
     }
+    #CntE33 {
+        width: 83px;
+        height: 83px;
+    }
+
     #path {
         margin-top: 18px;
         margin-bottom: 10px;
@@ -372,16 +390,9 @@
         height: 300px;
         background: white;
     }
-    .hohoho {
-        border: none !important;
-        margin-left: 29px;
-        margin-top: -4px;
-        width: 94%;
-        height: 50%;
-    }
     .elename {
         color: white;
-        font-size: 14.7px !important;
+        font-size: 13.5px !important;
         font-weight: 200 !important;
     }
     .element-item {
@@ -400,18 +411,18 @@
     }
     .element-item .name {
       position: absolute;
-      left: 7px;
-      top: 46.5px;
+      left: 11px;
+      top: 46px;
       text-transform: none;
       letter-spacing: 0;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: bold;
     }
 
     /*1234..버튼*/
     .element-item .symbol {
       position: absolute;
-      left: 11px;
+      left: 12.5px;
       top: 6px;
       font-size: 27px;
       font-weight: bold;
@@ -420,9 +431,9 @@
     /*ready, do, end, mod change버튼*/
     .element-item .symbol01 {
       position: absolute;
-      left: 10px;
-      top: 37px;
-      font-size: 21px;
+      left: 12px;
+      top: 31px;
+      font-size: 17.5px;
       font-weight: bold;
       color: white;
     }
@@ -448,6 +459,18 @@
         cursor:pointer;
         margin-top: 104px;
     }
+    .element-item.transition11 {
+        background-color: #006dcc;
+        border-radius: 8px;
+        cursor:pointer;
+        margin-top: 104px;
+    }
+    .element-item.transition111 {
+        background-color: #006dcc;
+        border-radius: 8px;
+        cursor:pointer;
+        margin-top: 104px;
+    }
     .element-item.transition011 {
         background-color: #006dcc;
         border-radius: 8px;
@@ -458,27 +481,29 @@
         background-color: #ffbb47;
         border-radius: 8px;
         cursor:pointer;
+        margin-left: 2px;
         margin-top: 104px;
-        width: 291px;
+        width: 293px;
     }
     .element-item.transition021 {
         background-color: #ffbb47;
         border-radius: 8px;
         cursor:pointer;
+        margin-left: 2px;
         margin-top: 3px;
-        width: 291px;
+        width: 293px;
     }
     .element-item.transition022 {
         background-color: #ffbb47;
         border-radius: 8px;
         cursor:pointer;
-        margin-top: 116px;
-        width: 210px;
+        margin-top: 103px;
+        width: 187px;
     }
     .element-item.transition03 {
         background-color: #006dcc;
         border-radius: 8px;
-        margin-top: 8px;
+        margin-top: 9px;
         cursor:pointer;
     }
     .btn_cat {
@@ -494,9 +519,14 @@
         cursor: pointer;
         border-radius: 8px;
         font-weight: 200;
-        /*position: relative;*/
         left: 100px;
         bottom: 2px;
+    }
+    .hohoho {
+        border: none !important;
+        margin: -4px auto 0px auto;
+        width: 300px;
+        height: 50%;
     }
     #food_han {
         background: none;
@@ -533,17 +563,23 @@
         padding: 0px 0 0;
         background:#fff;
     }
-    
+
     .main-shade,.main-body{
         min-height:536px;
         min-width :355px;
     }
+
     #CntE3 {
         width: 90px;
         height: 90px;
-        margin-left: 0px;
-        margin-top: 0px;
+        margin-left: 6px;
+        margin-top: 5px;
     }
+    #CntE33 {
+        width: 90px;
+        height: 90px;
+    }
+
     #path {
         margin-top: 25px;
         margin-left: 6.5px;
@@ -755,8 +791,8 @@
     .element-item .symbol01{
       position: absolute;
       left: 10px;
-      top: 30px;
-      font-size: 22px;
+      top: 34px;
+      font-size: 17.5px;
       font-weight: bold;
       color: white;
     }
@@ -782,6 +818,18 @@
         cursor:pointer;
         margin-top: 114px;
     }
+    .element-item.transition11{
+        background-color: #006dcc;
+        border-radius: 8px;
+        cursor:pointer;
+        margin-top: 114px;
+    }
+    .element-item.transition111{
+        background-color: #006dcc;
+        border-radius: 8px;
+        cursor:pointer;
+        margin-top: 114px;
+    }
     .element-item.transition011{
         background-color: #006dcc;
         border-radius: 8px;
@@ -793,26 +841,27 @@
         border-radius: 8px;
         cursor:pointer;
         margin-top: 111px;
-        width: 307px;
+        margin-left: 4px;
+        width: 307.5px;
     }
     .element-item.transition021 {
         background-color: #ffbb47;
         border-radius: 8px;
         cursor:pointer;
         margin-top: 6px;
-        width: 307px;
+        width: 307.5px;
     }
     .element-item.transition022 {
         background-color: #ffbb47;
         border-radius: 8px;
         cursor:pointer;
-        margin-top: 112px;
+        margin-top: 114px;
         width: 200px;
     }
     .element-item.transition03 {
         background-color: #006dcc;
         border-radius: 8px;
-        margin-top: 13.5px;
+        margin-top: 13px;
         cursor:pointer;
     }
     .btn_cat {
@@ -874,11 +923,16 @@
         min-height:570px;
         min-width :355px;
     }
+
     #CntE3 {
         width: 94px;
         height: 94px;
-        margin-left: 0px;
-        margin-top: 1px;
+        margin-left: 6px;
+        margin-top: 6px;
+    }
+    #CntE33 {
+        width: 94px;
+        height: 94px;
     }
 
     #path {
@@ -1224,7 +1278,7 @@
         margin-left: 6.5px;
         font-size: 16.5px;
     }
-    
+
     .nav-name {
         float: left;
         width: 33.3333%;
@@ -1385,13 +1439,6 @@
         height: 300px;
         background: white;
     }
-    .hohoho {
-        border: none !important;
-        margin-left: 29px;
-        margin-top: -4px;
-        width: 94%;
-        height: 50%;
-    }
     .elename {
         color: white;
         font-size: 14.7px !important;
@@ -1434,9 +1481,9 @@
     /*ready, do, end, mod change버튼*/
     .element-item .symbol01 {
         position: absolute;
-        left: 10px;
-        top: 36px;
-        font-size: 24px;
+        left: 12px;
+        top: 37.5px;
+        font-size: 21px;
         font-weight: bold;
         color: white;
     }
@@ -1462,6 +1509,19 @@
     }
 
     .element-item.transition01 {
+        background-color: #006dcc;
+        border-radius: 8px;
+        cursor:pointer;
+        margin-top: 123px;
+    }
+
+    .element-item.transition11 {
+        background-color: #006dcc;
+        border-radius: 8px;
+        cursor:pointer;
+        margin-top: 123px;
+    }
+    .element-item.transition111 {
         background-color: #006dcc;
         border-radius: 8px;
         cursor:pointer;
@@ -1519,6 +1579,13 @@
         left: 100px;
         bottom: 2px;
     }
+
+    .hohoho {
+        border: none !important;
+        margin: -4px auto 0px auto;
+        width: 360px;
+        height: 50%;
+    }
     #food_han {
         background: none;
         border-radius: 13px;
@@ -1561,19 +1628,24 @@
         min-height:630px;
         min-width :390px;
     }
+
     #CntE3 {
         width: 105px;
         height: 105px;
-        margin-left: 2px;
-        margin-top: 0px;
+        margin-left: 7px;
+        margin-top: 6px;
+    }
+    #CntE33 {
+        width: 105px;
+        height: 105px;
     }
 
     #path {
         margin-top: 30px;
-        margin-left: 16px;
+        margin-left: 10px;
         font-size: 17px;
     }
-    
+
     .nav-name {
         float: left;
         width: 33.3333%;
@@ -1815,14 +1887,16 @@
         border-radius: 8px;
         cursor:pointer;
         margin-top:220px;
-        width: 565px;
+        margin-left: 10px;
+        width: 567px;
     }
     .element-item.transition021 {
         background-color: #ffbb47;
         border-radius: 8px;
         cursor:pointer;
         margin-top:10px;
-        width: 565px;
+        margin-left: 10px;
+        width: 567px;
     }
     .element-item.transition022 {
         background-color: #ffbb47;
@@ -1850,7 +1924,6 @@
         cursor: pointer;
         border-radius: 8px;
         font-weight: 200;
-        /*position: relative;*/
         left: 100px;
         bottom: 2px;
     }
@@ -1904,12 +1977,19 @@
         min-height:928px;
         min-width :768px;
     }
+
     #CntE3 {
         width: 172px;
         height: 172px;
-        margin-left: 6.5px;
-        margin-top: 8px;
+        margin-left: 11px;
+        margin-top: 12px;
     }
+    #CntE33 {
+        width: 172px;
+        height: 172px;
+    }
+
+
     #path {
         margin-top: 6px;
         margin-left: 78px;
@@ -1917,7 +1997,7 @@
         font-size: 23px;
 
     }
-    
+
     .nav-name {
         float: left;
         width: 33.3333%;
@@ -2272,7 +2352,7 @@
         font-size: 33px;
 
     }
-    
+
     .nav-name {
         float: left;
         width: 33.3333%;
@@ -2520,6 +2600,21 @@
         margin-top:178px;
         cursor:pointer;
     }
+
+    .element-item.transition11 {
+        background-color: #006dcc;
+        border-radius: 8px;
+        margin-left: 176px;
+        cursor:pointer;
+    }
+
+    .element-item.transition111 {
+        background-color: #006dcc;
+        border-radius: 8px;
+        margin-top: 10px;
+        cursor:pointer;
+    }
+
     .element-item.transition011 {
         background-color: #006dcc;
         border-radius: 8px;
@@ -2620,20 +2715,20 @@
         margin-top: 178px;
         margin-right: 12px;
         left: 4px;
-    } 
+    }
     #CntE33 {
         width: 152px;
         height: 150px;
     }
     #path {
         margin: 15px auto 20px auto;
-        width: 760px;
+        width: 700px;
         font-size: 23px;
     }
-    
+
     .nav-name {
         float: left;
-        width: 38%;
+        width: 33.3333%;
         text-align: center;
     }
     .nav-name h5 {
@@ -2653,17 +2748,16 @@
     }
     .nav-left {
         float: left;
-        width: 31%;
+        width: 33.3333%;
         text-align: center;
         margin-top: 4px;
     }
     .nav-right {
         float: right;
-        width: 31%;
+        width: 33.3333%;
         text-align: center;
         margin-top: 4px;
     }
-
     /*메인페이지 디자인*/
     .robot_mode {
         background: none;
@@ -2672,31 +2766,26 @@
         -moz-border-radius: 13px;
         -o-border-radius: 13px;
         border: 6px solid #006dcc;
-        width: 50%;
+        width: 45%;
         height: 385px;
         margin: auto auto;
         text-align: center;
     }
-    
-
     #main_img1 {
         width:270px;
         height:270px;
         cursor:pointer;
     }
-
     #main_img2 {
         width:270px;
         height:270px;
         cursor:pointer;
     }
-
     #main_img3 {
         width:270px;
         height:270px;
         cursor:pointer;
     }
-
     #slide1:checked ~ #controls label:nth-child(2),
     #slide2:checked ~ #controls label:nth-child(3),
     #slide5:checked ~ #controls label:nth-child(1) {
@@ -2722,7 +2811,6 @@
         background-color:rgba(207, 207, 209, 0.75);
         border-radius: 50%;
     }
-
     #cc-slides article {
         width: 20%;
         float: left;

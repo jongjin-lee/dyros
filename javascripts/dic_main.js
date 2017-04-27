@@ -133,9 +133,9 @@ function viewPathE1(){
 			$('#event').trigger('click');
 		}, 100);
 		setTimeout(function () {
-		divControl01.innerHTML += "<div class='element-item transition01 ㄴ'  id='ReadyE1' data-category='transition' onClick='ReadyE1()'><p class='symbol01'>Ready</p></div>";
-		divControl01.innerHTML += "<div class='element-item transition01 ㄴ'  id='DoE1'    data-category='transition' onClick='DoE1()'><p class='symbol01'>Do</p></div>";
-		divControl01.innerHTML += "<div class='element-item transition01 ㄴ'  id='EndE1'   data-category='transition' onClick='EndE1()'><p class='symbol01'>End</p></div>";
+		divControl01.innerHTML += "<div class='element-item transition11 ㄴ'  id='ReadyE1' data-category='transition' onClick='ReadyE1()'><p class='symbol01'>Ready</p></div>";
+		divControl01.innerHTML += "<div class='element-item transition111 ㄴ'  id='DoE1'    data-category='transition' onClick='DoE1()'><p class='symbol01'>Do</p></div>";
+		divControl01.innerHTML += "<div class='element-item transition111 ㄴ'  id='EndE1'   data-category='transition' onClick='EndE1()'><p class='symbol01'>End</p></div>";
 		divControl01.innerHTML += "<div class='element-item transition021 ㄴ'  data-category='transition' onClick='ModeChange()'><p class='symbol01'>Mode change</p></div>";
 		}, 600);
 		document.getElementById("e1").style.pointerEvents = 'none';
@@ -159,9 +159,9 @@ function viewPathE2(){
 			$('#event').trigger('click');
 		}, 100);
 		setTimeout(function () {
-		divControl01.innerHTML += "<div class='element-item transition01 ㄴ'  id='ReadyE2' data-category='transition' onClick='ReadyE2()'><p class='symbol01'>Ready</p></div>";
-		divControl01.innerHTML += "<div class='element-item transition01 ㄴ'  id='DoE2'    data-category='transition' onClick='DoE2()'><p class='symbol01'>Do</p></div>";
-		divControl01.innerHTML += "<div class='element-item transition01 ㄴ'  id='EndE2'   data-category='transition' onClick='EndE2()'><p class='symbol01'>End</p></div>";
+		divControl01.innerHTML += "<div class='element-item transition11 ㄴ'  id='ReadyE2' data-category='transition' onClick='ReadyE2()'><p class='symbol01'>Ready</p></div>";
+		divControl01.innerHTML += "<div class='element-item transition111 ㄴ'  id='DoE2'    data-category='transition' onClick='DoE2()'><p class='symbol01'>Do</p></div>";
+		divControl01.innerHTML += "<div class='element-item transition111 ㄴ'  id='EndE2'   data-category='transition' onClick='EndE2()'><p class='symbol01'>End</p></div>";
 		divControl01.innerHTML += "<div class='element-item transition021 ㄴ'  data-category='transition' onClick='ModeChange()'><p class='symbol01'>Mode change</p></div>";
 		}, 850);
 		document.getElementById("e2").style.pointerEvents = 'none';
@@ -174,6 +174,7 @@ function viewPathE2(){
 
 function viewPathE3(){
 	var check = confirm("EVENT > Hello 실행합니다.");
+    var width = screen.width;
 	if(check == true){
 		var divPath = document.getElementById("path");
 		var divControl01 = document.getElementById("test01");
@@ -185,11 +186,20 @@ function viewPathE3(){
 			$('#event').trigger('click');
 		}, 100);
 		setTimeout(function () {
-		divControl01.innerHTML += "<span class='custom-dropdown big' id='CntE3'><select id='CntE33' onClick='OptionCheck()'><option value='1'>1&nbsp;</option><option value='2'>2&nbsp;</option><option value='3'>3&nbsp;</option><option value='4'>4&nbsp;</option><option value='5'>5&nbsp;</option><option value='6'>6&nbsp;</option><option value='7'>7&nbsp;</option><option value='8'>8&nbsp;</option><option value='9'>9&nbsp;</option></select></span>";
-		divControl01.innerHTML += "<div class='element-item transition01 ㄴ'  id='ReadyE3' data-category='transition' onClick='ReadyE3()'><p class='symbol01'>Ready</p></div>";
-		divControl01.innerHTML += "<div class='element-item transition01 ㄴ'  id='DoE3'    data-category='transition' onClick='DoE3()'><p class='symbol01'>Do</p></div>";
-		divControl01.innerHTML += "<div class='element-item transition01 ㄴ'  id='EndE3'   data-category='transition' onClick='EndE3()'><p class='symbol01'>End</p></div>";
-		divControl01.innerHTML += "<div class='element-item transition021 ㄴ'  data-category='transition' onClick='ModeChange()'><p class='symbol01'>Mode change</p></div>";
+            if(width >= 1026){
+        		divControl01.innerHTML += "<span class='custom-dropdown big' id='CntE3'><select id='CntE33' onClick='OptionCheck()'><option value='1'>1&nbsp;</option><option value='2'>2&nbsp;</option><option value='3'>3&nbsp;</option><option value='4'>4&nbsp;</option><option value='5'>5&nbsp;</option><option value='6'>6&nbsp;</option><option value='7'>7&nbsp;</option><option value='8'>8&nbsp;</option><option value='9'>9&nbsp;</option></select></span>";
+        		divControl01.innerHTML += "<div class='element-item transition01 ㄴ'  id='ReadyE3' data-category='transition' onClick='ReadyE3()'><p class='symbol01'>Ready</p></div>";
+        		divControl01.innerHTML += "<div class='element-item transition01 ㄴ'  id='DoE3'    data-category='transition' onClick='DoE3()'><p class='symbol01'>Do</p></div>";
+        		divControl01.innerHTML += "<div class='element-item transition01 ㄴ'  id='EndE3'   data-category='transition' onClick='EndE3()'><p class='symbol01'>End</p></div>";
+        		divControl01.innerHTML += "<div class='element-item transition021 ㄴ'  data-category='transition' onClick='ModeChange()'><p class='symbol01'>Mode change</p></div>";
+            }
+            else{
+                divControl01.innerHTML += "<span class='custom-dropdown big' id='CntE3'><select id='CntE33' onClick='OptionCheck()'><option value='1'>1&nbsp;</option><option value='2'>2&nbsp;</option><option value='3'>3&nbsp;</option><option value='4'>4&nbsp;</option><option value='5'>5&nbsp;</option><option value='6'>6&nbsp;</option><option value='7'>7&nbsp;</option><option value='8'>8&nbsp;</option><option value='9'>9&nbsp;</option></select></span>";
+        		divControl01.innerHTML += "<div class='element-item transition01 ㄴ'  id='ReadyE3' data-category='transition' onClick='ReadyE3()'><p class='symbol01'>Ready</p></div>";
+        		divControl01.innerHTML += "<div class='element-item transition01 ㄴ'  id='DoE3'    data-category='transition' onClick='DoE3()'><p class='symbol01'>Do</p></div>";
+        		divControl01.innerHTML += "<div class='element-item transition03 ㄴ'  id='EndE3'   data-category='transition' onClick='EndE3()'><p class='symbol01'>End</p></div>";
+        		divControl01.innerHTML += "<div class='element-item transition021 ㄴ'  data-category='transition' onClick='ModeChange()'><p class='symbol01'>Mode change</p></div>";
+            }
 		}, 1000);
 		document.getElementById("e3").style.pointerEvents = 'none';
 		document.getElementById("all").style.pointerEvents = 'none';
@@ -201,6 +211,7 @@ function viewPathE3(){
 
 function viewPathE4(){
 	var check = confirm("EVENT > Introduce 실행합니다.");
+    var width = screen.width;
 	if(check == true){
 		var divPath = document.getElementById("path");
 		var divControl01 = document.getElementById("test01");
@@ -212,8 +223,13 @@ function viewPathE4(){
 			$('#event').trigger('click');
 		}, 100);
 		setTimeout(function () {
-		divControl01.innerHTML += "<div class='element-item transition01 ㄴ'  id='EndE2'   data-category='transition' style='cursor:pointer;' onClick='EndE4()'><p class='symbol01'>End</p></div>";
-		divControl01.innerHTML += "<div class='element-item transition022 ㄴ'  data-category='transition' style='cursor:pointer;' onClick='ModeChange()'><p class='symbol01'>Mode change</p></div>";
+		        divControl01.innerHTML += "<div class='element-item transition11 ㄴ'  id='EndE2'   data-category='transition' style='cursor:pointer;' onClick='EndE4()'><p class='symbol01'>End</p></div>";
+                if(width >= 1026){
+                        divControl01.innerHTML += "<div class='element-item transition021 ㄴ'  data-category='transition' style='cursor:pointer;' onClick='ModeChange()'><p class='symbol01'>Mode change</p></div>";
+                }
+                else{
+                        divControl01.innerHTML += "<div class='element-item transition022 ㄴ'  data-category='transition' style='cursor:pointer;' onClick='ModeChange()'><p class='symbol01'>Mode change</p></div>";
+                }
 		}, 850);
 		document.getElementById("e4").style.pointerEvents = 'none';
 		document.getElementById("all").style.pointerEvents = 'none';
