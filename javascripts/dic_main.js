@@ -178,7 +178,7 @@ function viewPathE3(){
 	if(check == true){
 		var divPath = document.getElementById("path");
 		var divControl01 = document.getElementById("test01");
-		divPath.innerHTML = "<font color='red' style='margin-left:30px;'>EVENT&nbsp;&nbsp;></font>&nbsp;&nbsp;<font color='black'>Hello</font>";
+		divPath.innerHTML = "<font color='red' style='margin-left:30px;'>EVENT&nbsp;&nbsp;></font>&nbsp;&nbsp;<font color='black'>Hello</font>" + width;
 		document.getElementById("e1").remove()
 		document.getElementById("e2").remove()
 		document.getElementById("e4").remove()
