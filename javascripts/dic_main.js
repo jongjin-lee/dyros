@@ -174,7 +174,7 @@ function viewPathE2(){
 
 function viewPathE3(){
 	var check = confirm("EVENT > Hello 실행합니다.");
-    var width = screen.width;
+    var width = $('.main-shade').width;
 	if(check == true){
 		var divPath = document.getElementById("path");
 		var divControl01 = document.getElementById("test01");
@@ -211,8 +211,8 @@ function viewPathE3(){
 
 function viewPathE4(){
 	var check = confirm("EVENT > Introduce 실행합니다.");
-    var width = screen.width;
-	if(check == true){
+    var width = $('.main-shade').width;	
+    if(check == true){
 		var divPath = document.getElementById("path");
 		var divControl01 = document.getElementById("test01");
 		divPath.innerHTML = "<font color='red' style='margin-left:30px;'>EVENT&nbsp;&nbsp;></font>&nbsp;&nbsp;<font color='black'>Introduce</font>";
