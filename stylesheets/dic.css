@@ -2492,7 +2492,7 @@
 }
 
 /* PC환경 */
-@media (min-width : 1024px){
+@media (min-width : 1023px){
     .btn_al {
         background-color: rgb(164, 166, 170);
         border: 2px solid rgba(97, 101, 100, 0);
