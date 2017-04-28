@@ -4,8 +4,8 @@
         background-color: rgb(164, 166, 170);
         border: 2px solid rgba(97, 101, 100, 0);
         color: #ffffff;
-        width: 55.5px;
-        height: 31px;
+        width: 52px;
+        height: 25px;
         margin: 5px 2px 0px 2px;
         text-decoration: none;
         display: inline-block;
@@ -175,7 +175,7 @@
     	  -moz-border-radius: 13px;
     	   -o-border-radius: 13px;
         border: 2px solid #006dcc;
-        width: 247px;
+        width: 250px;
     	font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
         color: #616564;
         font-size: 0.5em;
@@ -367,8 +367,8 @@
         background-color: rgb(164, 166, 170);
         border: 2px solid rgba(97, 101, 100, 0);
         color: #ffffff;
-        width: 60px;
-        height: 35px;
+        width: 58px;
+        height: 30px;
         margin: 5px 2px 0px 2px;
         text-decoration: none;
         display: inline-block;
@@ -535,7 +535,7 @@
     	  -moz-border-radius: 13px;
     	   -o-border-radius: 13px;
         border: 2px solid #006dcc;
-        width: 268px;
+        width: 263px;
     	font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
         color: #616564;
         font-size: 1.05em;
@@ -721,9 +721,9 @@
         background-color: rgb(164, 166, 170);
         border: 2px solid rgba(97, 101, 100, 0);
         color: #ffffff;
-        width: 63.5px;
-        height: 36px;
-        margin: 5px 2px 0px 2px;
+        width: 60px;
+        height: 32px;
+        margin: 5px 3px 0px 3px;
         text-decoration: none;
         display: inline-block;
         font-size: 10px;
@@ -888,7 +888,7 @@
     	  -moz-border-radius: 13px;
     	   -o-border-radius: 13px;
         border: 2px solid #006dcc;
-        width: 282px;
+        width: 280px;
         margin: 0 auto;
     	font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
         color: #616564;
@@ -1414,8 +1414,8 @@
         background-color: rgb(164, 166, 170);
         border: 2px solid rgba(97, 101, 100, 0);
         color: #ffffff;
-        width: 71px;
-        height: 40px;
+        width: 67px;
+        height: 35px;
         margin: 5px 2px 0px 2px;
         text-decoration: none;
         display: inline-block;
@@ -1591,7 +1591,7 @@
     	  -moz-border-radius: 13px;
     	   -o-border-radius: 13px;
         border: 2px solid #006dcc;
-        width: 312px;
+        width: 304px;
         margin: 0 auto;
     	font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
         color: #616564;
@@ -1780,9 +1780,9 @@
         background-color: rgb(164, 166, 170);
         border: 2px solid rgba(97, 101, 100, 0);
         color: #ffffff;
-        width: 122px;
-        height: 59px;
-        margin: 5px 5px 0px 5px;
+        width: 118px;
+        height: 52px;
+        margin: 5px 3px 0px 3px;
         text-decoration: none;
         display: inline-block;
         font-size: 19px;
@@ -1812,9 +1812,9 @@
     .element-item {
       position: relative;
       float: left;
-      width: 175px;
-      height: 175px;
-      margin: 14px;
+      width: 172px;
+      height: 172px;
+      margin: 12px;
       padding: 15px;
       background: #888;
       color: #262524;
@@ -1872,19 +1872,31 @@
         margin-top:208px;
         cursor:pointer;
     }
+    .element-item.transition11 {
+        background-color: #006dcc;
+        border-radius: 8px;
+        margin-top:208px;
+        cursor:pointer;
+    }
+    .element-item.transition111 {
+        background-color: #006dcc;
+        border-radius: 8px;
+        margin-top:208px;
+        cursor:pointer;
+    }
     .element-item.transition011 {
         background-color: #006dcc;
         border-radius: 8px;
-        margin-top:207px;
+        margin-top:208px;
         cursor:pointer;
     }
     .element-item.transition02 {
         background-color: #ffbb47;
         border-radius: 8px;
         cursor:pointer;
-        margin-top:220px;
+        margin-top:210px;
         margin-left: 10px;
-        width: 567px;
+        width: 560px;
     }
     .element-item.transition021 {
         background-color: #ffbb47;
@@ -1898,8 +1910,8 @@
         background-color: #ffbb47;
         border-radius: 8px;
         cursor:pointer;
-        margin-top:10px;
-        width:400px;
+        margin-top:208px;
+        width:370px;
     }
     .element-item.transition03 {
         background-color: #006dcc;
@@ -1930,7 +1942,7 @@
     	  -moz-border-radius: 13px;
     	   -o-border-radius: 13px;
         border: 2px solid #006dcc;
-        width: 540px;
+        width: 524px;
         margin: 0 auto;
     	font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
         color: #616564;
@@ -1941,7 +1953,7 @@
     .hohoho {
         border: none !important;
         margin: 30px auto 0px auto;
-        width: 610px;
+        width: 590px;
         height: 50%;
     }
     /*하단 여백용*/
@@ -2136,8 +2148,8 @@
         background-color: rgb(164, 166, 170);
         border: 2px solid rgba(97, 101, 100, 0);
         color: #ffffff;
-        width: 162px;
-        height: 80px;
+        width: 156px;
+        height: 74px;
         margin: 5px 8px 0px 8px;
         text-decoration: none;
         display: inline-block;
@@ -2201,9 +2213,9 @@
     /*ready, do, end, mod change버튼*/
     .element-item .symbol01 {
       position: absolute;
-      left: 20px;
-      top: 84.5px;
-      font-size: 51px;
+      left: 35px;
+      top: 81px;
+      font-size: 44px;
       font-weight: bold;
       color: white;
     }
@@ -2227,7 +2239,19 @@
     .element-item.transition01 {
         background-color: #006dcc;
         border-radius: 8px;
-        margin-top: 305px;
+        margin-top: 285px;
+        cursor:pointer;
+    }
+    .element-item.transition11 {
+        background-color: #006dcc;
+        border-radius: 8px;
+        margin-top: 285px;
+        cursor:pointer;
+    }
+    .element-item.transition111 {
+        background-color: #006dcc;
+        border-radius: 8px;
+        margin-top: 285px;
         cursor:pointer;
     }
     /*END*/
@@ -2240,29 +2264,29 @@
     .element-item.transition03 {
         background-color: #006dcc;
         border-radius: 8px;
-        margin-top: 41px;
+        margin-top: 38px;
         cursor:pointer;
     }
     .element-item.transition02 {
         background-color: #ffbb47;
         border-radius: 8px;
         cursor:pointer;
-        margin-top:302px;
-        width: 823px;
+        margin-top:285px;
+        width: 770px;
     }
     .element-item.transition021 {
         background-color: #ffbb47;
         border-radius: 8px;
         cursor:pointer;
         margin-top:17px;
-        width: 823px;
+        width: 770px;
     }
     .element-item.transition022 {
         background-color: #ffbb47;
         border-radius: 8px;
         cursor:pointer;
-        margin-top:10px;
-        width:400px;
+        margin-top:285px;
+        width:490px;
     }
     .btn_cat {
         background-color: #006dcc;
@@ -2288,7 +2312,7 @@
     	  -moz-border-radius: 13px;
     	   -o-border-radius: 13px;
         border: 2px solid #006dcc;
-        width: 725px;
+        width: 740px;
         margin: 0 auto;
     	font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
         color: #616564;
@@ -2328,21 +2352,24 @@
         min-height:1240px;
         min-width :800px;
     }
+
     #CntE3 {
-        width: 250px;
-        height: 250px;
-        margin-left: 15px;
-        margin-top: 8px;
+        width: 232px;
+        height: 232px;
+        margin-left: 18px;
+        margin-top: 15px;
         font-size: 45px;
     }
-    #path {
-        margin-top: 10px;
-        margin-left: 82px;
-        margin-bottom: 8px;
-        font-size: 33px;
-
+    #CntE33 {
+        width: 232px;
+        height: 232px;
     }
 
+    #path {
+        margin: 10px auto 8px auto;
+        width: 810px;
+        font-size: 33px;
+    }
     .nav-name {
         float: left;
         width: 33.3333%;

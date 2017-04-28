@@ -38,6 +38,9 @@
 
 <script>
     function loadAuto(){
+		var winHeight = $(window).height();
+		var headerHeight = $(".navtop").outerHeight();
+		$('#shade').height(winHeight - headerHeight);
 		$('#auto').trigger('click');
     }
 </script>
@@ -52,7 +55,7 @@
 					</a>
 				</div>
 			    <div class="nav-name">
-				    <h5 class="pro-link">UI TEST</h5>
+				    <h5 class="pro-link">DYROS</h5>
 			    </div>
 				<div class="nav-right">
 					<a href="index.html">
