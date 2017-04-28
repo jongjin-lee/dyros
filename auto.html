@@ -40,23 +40,17 @@
     function loadAuto(){
 		var winHeight = $(window).height();
 		var headerHeight = $(".navtop").outerHeight();
-		var divPath = document.getElementById("path");
-		var flag = 0
 		if(winHeight >= 950){
 			if(winHeight >= 1365){
 				$('#shade').height(winHeight - headerHeight + 120);
-				flag = 1
 			}
 			else{
 				$('#shade').height(winHeight - headerHeight + 90);
-				flag = 2
 			}
 		}
 		else{
 			$('#shade').height(winHeight - headerHeight);
-			flag = 3
 		}
-		divPath.innerHTML = winHeight + '*****' + flag 
 		$('#auto').trigger('click');
     }
 </script>
