@@ -4,8 +4,8 @@
         background-color: rgb(164, 166, 170);
         border: 2px solid rgba(97, 101, 100, 0);
         color: #ffffff;
-        width: 52px;
-        height: 25px;
+        width: 54px;
+        height: 28px;
         margin: 5px 2px 0px 2px;
         text-decoration: none;
         display: inline-block;
@@ -175,7 +175,7 @@
     	  -moz-border-radius: 13px;
     	   -o-border-radius: 13px;
         border: 2px solid #006dcc;
-        width: 250px;
+        width: 240px;
     	font-family: 'Noto Sans Korean', 'Open Sans', sans-serif;
         color: #616564;
         font-size: 0.5em;
