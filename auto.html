@@ -40,23 +40,23 @@
     function loadAuto(){
 		var winHeight = $(window).height();
 		var headerHeight = $(".navtop").outerHeight();
-//		var divPath = document.getElementById("path");
-//		var flag = 0
+		var divPath = document.getElementById("path");
+		var flag = 0
 		if(winHeight >= 950){
 			if(winHeight >= 1365){
 				$('#shade').height(winHeight - headerHeight + 100);
-//				flag = 1
+				flag = 1
 			}
 			else{
 				$('#shade').height(winHeight - headerHeight + 65);
-//				flag = 2
+				flag = 2
 			}
 		}
 		else{
 			$('#shade').height(winHeight - headerHeight);
-//			flag = 3
+			flag = 3
 		}
-//		divPath.innerHTML = winHeight + '*****' + flag 
+		divPath.innerHTML = winHeight + '*****' + flag 
 		$('#auto').trigger('click');
     }
 </script>
