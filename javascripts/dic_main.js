@@ -333,7 +333,6 @@ function ReadyE2(){
 		var divPath = document.getElementById("path");
 		divPath.innerHTML = "<font color='red' style='margin-left:30px;'>EVENT&nbsp;&nbsp;></font>&nbsp;&nbsp;<font color='black'>Handshake&nbsp;&nbsp;></font>&nbsp;&nbsp;<font color='black'>Ready</font>";
 	}
-	document.getElementById("CntE3").style.pointerEvents = 'none';
 }
 function DoE2(){
 	var check = confirm("Event > Handshake > Do 실행합니다.");
@@ -355,6 +354,7 @@ function ReadyE3(){
 	if(check == true){
 		var divPath = document.getElementById("path");
 		divPath.innerHTML = "<font color='red'  style='margin-left:30px;'>EVENT&nbsp;&nbsp;></font>&nbsp;&nbsp;<font color='black' >Hello&nbsp;&nbsp;></font>&nbsp;&nbsp;<font color='black' >Ready</font>";
+		document.getElementById("CntE33").style.pointerEvents = 'none';
 	}
 }
 function DoE3(){
@@ -389,7 +389,7 @@ function ModeChange(){
 
 function OptionCheck(){
 	var flag = 1;
-	$('#CntE3').on('change', function() {
+	$('#CntE33').on('change', function() {
 		var str = this.value + " 회 설정합니다."
 		if(flag == 1){
 			alert(str);
