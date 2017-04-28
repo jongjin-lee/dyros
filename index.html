@@ -36,15 +36,16 @@
 </head>
 
 <script>
-	function getResolution(){
-		var width = screen.width;
-		var height = screen.height;
-		var resolution = document.getElementById("screenSize");
-		resolution.innerHTML += '&nbsp;'
+	function resizeDiv(){
+		var winHeight = $(window).height();
+    	var headerHeight = $(".navtop").outerHeight();
+    	$('#shade').height(winHeight - headerHeight);
+//		var resolution = document.getElementById("screenSize");
+//		resolution.innerHTML += 
 	}
 </script>
 
-<body onload="getResolution()">
+<body onload="resizeDiv()">
 	<div class="body-back">
 		<!-- navbar -->
 		<div class="phone-box wrap push">
@@ -67,7 +68,7 @@
 			<!--리얼 바디-->
 			<div class="main-grid">
 				<div class="main-shade" id="shade">
-			    	<div class="row" id="screenSize">&nbsp;</div>
+			    	<div class="row" id="screenSize" style='margin-left:50px;'></div>
 				    <br><br><br>
 				    <!-- <img src="images/mode_select_label.png" class="mode_select_label"> -->
 	    			<div class="robot_mode">
@@ -103,7 +104,6 @@
 	                        </div>
 	                    </article>
 	                </div>
-	                <div class="dicfoot"></div>
 	        	</div>
 		    </div>
 	    </div>
