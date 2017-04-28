@@ -1,6 +1,3 @@
-/*! Hammer.JS - v2.0.8 - 2016-04-23
- *
- * MIT license */
 (function(window, document, exportName, undefined) {
   'use strict';
 
@@ -13,26 +10,11 @@ var round = Math.round;
 var abs = Math.abs;
 var now = Date.now;
 
-/**
- * set a timeout with a given scope
- * @param {Function} fn
- * @param {Number} timeout
- * @param {Object} context
- * @returns {number}
- */
 function setTimeoutContext(fn, timeout, context) {
     return setTimeout(bindFn(fn, context), timeout);
 }
 
-/**
- * if the argument is an array, we want to execute the fn on each entry
- * if it aint an array we don't want to do a thing.
- * this is used by all the methods that accept a single and array argument.
- * @param {*|Array} arg
- * @param {String} fn
- * @param {Object} [context]
- * @returns {Boolean}
- */
+
 function invokeArrayArg(arg, fn, context) {
     if (Array.isArray(arg)) {
         each(arg, context[fn], context);
@@ -41,12 +23,7 @@ function invokeArrayArg(arg, fn, context) {
     return false;
 }
 
-/**
- * walk objects and arrays
- * @param {Object} obj
- * @param {Function} iterator
- * @param {Object} context
- */
+
 function each(obj, iterator, context) {
     var i;
 
@@ -69,13 +46,7 @@ function each(obj, iterator, context) {
     }
 }
 
-/**
- * wrap a method with a deprecation warning and stack trace
- * @param {Function} method
- * @param {String} name
- * @param {String} message
- * @returns {Function} A new function wrapping the supplied method.
- */
+
 function deprecate(method, name, message) {
     var deprecationMessage = 'DEPRECATED METHOD: ' + name + '\n' + message + ' AT \n';
     return function() {
@@ -92,13 +63,7 @@ function deprecate(method, name, message) {
     };
 }
 
-/**
- * extend object.
- * means that properties in dest will be overwritten by the ones in src.
- * @param {Object} target
- * @param {...Object} objects_to_assign
- * @returns {Object} target
- */
+
 var assign;
 if (typeof Object.assign !== 'function') {
     assign = function assign(target) {
@@ -123,14 +88,7 @@ if (typeof Object.assign !== 'function') {
     assign = Object.assign;
 }
 
-/**
- * extend object.
- * means that properties in dest will be overwritten by the ones in src.
- * @param {Object} dest
- * @param {Object} src
- * @param {Boolean} [merge=false]
- * @returns {Object} dest
- */
+
 var extend = deprecate(function extend(dest, src, merge) {
     var keys = Object.keys(src);
     var i = 0;
@@ -143,23 +101,12 @@ var extend = deprecate(function extend(dest, src, merge) {
     return dest;
 }, 'extend', 'Use `assign`.');
 
-/**
- * merge the values from src in the dest.
- * means that properties that exist in dest will not be overwritten by src
- * @param {Object} dest
- * @param {Object} src
- * @returns {Object} dest
- */
+
 var merge = deprecate(function merge(dest, src) {
     return extend(dest, src, true);
 }, 'merge', 'Use `assign`.');
 
-/**
- * simple class inheritance
- * @param {Function} child
- * @param {Function} base
- * @param {Object} [properties]
- */
+
 function inherit(child, base, properties) {
     var baseP = base.prototype,
         childP;
@@ -173,25 +120,14 @@ function inherit(child, base, properties) {
     }
 }
 
-/**
- * simple function bind
- * @param {Function} fn
- * @param {Object} context
- * @returns {Function}
- */
+
 function bindFn(fn, context) {
     return function boundFn() {
         return fn.apply(context, arguments);
     };
 }
 
-/**
- * let a boolean value also be a function that must return a boolean
- * this first item in args will be used as the context
- * @param {Boolean|Function} val
- * @param {Array} [args]
- * @returns {Boolean}
- */
+
 function boolOrFn(val, args) {
     if (typeof val == TYPE_FUNCTION) {
         return val.apply(args ? args[0] || undefined : undefined, args);
@@ -199,47 +135,26 @@ function boolOrFn(val, args) {
     return val;
 }
 
-/**
- * use the val2 when val1 is undefined
- * @param {*} val1
- * @param {*} val2
- * @returns {*}
- */
+
 function ifUndefined(val1, val2) {
     return (val1 === undefined) ? val2 : val1;
 }
 
-/**
- * addEventListener with multiple events at once
- * @param {EventTarget} target
- * @param {String} types
- * @param {Function} handler
- */
+
 function addEventListeners(target, types, handler) {
     each(splitStr(types), function(type) {
         target.addEventListener(type, handler, false);
     });
 }
 
-/**
- * removeEventListener with multiple events at once
- * @param {EventTarget} target
- * @param {String} types
- * @param {Function} handler
- */
+
 function removeEventListeners(target, types, handler) {
     each(splitStr(types), function(type) {
         target.removeEventListener(type, handler, false);
     });
 }
 
-/**
- * find if a node is in the given parent
- * @method hasParent
- * @param {HTMLElement} node
- * @param {HTMLElement} parent
- * @return {Boolean} found
- */
+
 function hasParent(node, parent) {
     while (node) {
         if (node == parent) {
@@ -250,32 +165,17 @@ function hasParent(node, parent) {
     return false;
 }
 
-/**
- * small indexOf wrapper
- * @param {String} str
- * @param {String} find
- * @returns {Boolean} found
- */
+
 function inStr(str, find) {
     return str.indexOf(find) > -1;
 }
 
-/**
- * split string on whitespace
- * @param {String} str
- * @returns {Array} words
- */
+
 function splitStr(str) {
     return str.trim().split(/\s+/g);
 }
 
-/**
- * find if a array contains the object using indexOf or a simple polyFill
- * @param {Array} src
- * @param {String} find
- * @param {String} [findByKey]
- * @return {Boolean|Number} false when not found, or the index
- */
+
 function inArray(src, find, findByKey) {
     if (src.indexOf && !findByKey) {
         return src.indexOf(find);
@@ -291,22 +191,12 @@ function inArray(src, find, findByKey) {
     }
 }
 
-/**
- * convert array-like objects to real arrays
- * @param {Object} obj
- * @returns {Array}
- */
+
 function toArray(obj) {
     return Array.prototype.slice.call(obj, 0);
 }
 
-/**
- * unique array with objects based on a key (like 'id') or just by the array's value
- * @param {Array} src [{id:1},{id:2},{id:1}]
- * @param {String} [key]
- * @param {Boolean} [sort=False]
- * @returns {Array} [{id:1},{id:2}]
- */
+
 function uniqueArray(src, key, sort) {
     var results = [];
     var values = [];
@@ -334,12 +224,7 @@ function uniqueArray(src, key, sort) {
     return results;
 }
 
-/**
- * get the prefixed property
- * @param {Object} obj
- * @param {String} property
- * @returns {String|Undefined} prefixed
- */
+
 function prefixed(obj, property) {
     var prefix, prop;
     var camelProp = property[0].toUpperCase() + property.slice(1);
@@ -357,20 +242,13 @@ function prefixed(obj, property) {
     return undefined;
 }
 
-/**
- * get a unique id
- * @returns {number} uniqueId
- */
+
 var _uniqueId = 1;
 function uniqueId() {
     return _uniqueId++;
 }
 
-/**
- * get the window object of an element
- * @param {HTMLElement} element
- * @returns {DocumentView|Window}
- */
+
 function getWindowForElement(element) {
     var doc = element.ownerDocument || element;
     return (doc.defaultView || doc.parentWindow || window);
@@ -407,13 +285,7 @@ var DIRECTION_ALL = DIRECTION_HORIZONTAL | DIRECTION_VERTICAL;
 var PROPS_XY = ['x', 'y'];
 var PROPS_CLIENT_XY = ['clientX', 'clientY'];
 
-/**
- * create new input type manager
- * @param {Manager} manager
- * @param {Function} callback
- * @returns {Input}
- * @constructor
- */
+
 function Input(manager, callback) {
     var self = this;
     this.manager = manager;
@@ -421,8 +293,7 @@ function Input(manager, callback) {
     this.element = manager.element;
     this.target = manager.options.inputTarget;
 
-    // smaller wrapper around the handler, for the scope and the enabled state of the manager,
-    // so when disabled the input events are completely bypassed.
+    
     this.domHandler = function(ev) {
         if (boolOrFn(manager.options.enable, [manager])) {
             self.handler(ev);
@@ -434,24 +305,15 @@ function Input(manager, callback) {
 }
 
 Input.prototype = {
-    /**
-     * should handle the inputEvent data and trigger the callback
-     * @virtual
-     */
+
     handler: function() { },
 
-    /**
-     * bind the events
-     */
     init: function() {
         this.evEl && addEventListeners(this.element, this.evEl, this.domHandler);
         this.evTarget && addEventListeners(this.target, this.evTarget, this.domHandler);
         this.evWin && addEventListeners(getWindowForElement(this.element), this.evWin, this.domHandler);
     },
 
-    /**
-     * unbind the events
-     */
     destroy: function() {
         this.evEl && removeEventListeners(this.element, this.evEl, this.domHandler);
         this.evTarget && removeEventListeners(this.target, this.evTarget, this.domHandler);
@@ -459,12 +321,7 @@ Input.prototype = {
     }
 };
 
-/**
- * create new input type manager
- * called by the Manager constructor
- * @param {Hammer} manager
- * @returns {Input}
- */
+
 function createInputInstance(manager) {
     var Type;
     var inputClass = manager.options.inputClass;
@@ -483,12 +340,7 @@ function createInputInstance(manager) {
     return new (Type)(manager, inputHandler);
 }
 
-/**
- * handle input events
- * @param {Manager} manager
- * @param {String} eventType
- * @param {Object} input
- */
+
 function inputHandler(manager, eventType, input) {
     var pointersLen = input.pointers.length;
     var changedPointersLen = input.changedPointers.length;
@@ -502,36 +354,26 @@ function inputHandler(manager, eventType, input) {
         manager.session = {};
     }
 
-    // source event is the normalized value of the domEvents
-    // like 'touchstart, mouseup, pointerdown'
     input.eventType = eventType;
 
-    // compute scale, rotation etc
     computeInputData(manager, input);
 
-    // emit secret event
     manager.emit('hammer.input', input);
 
     manager.recognize(input);
     manager.session.prevInput = input;
 }
 
-/**
- * extend the data with some usable properties like scale, rotate, velocity etc
- * @param {Object} manager
- * @param {Object} input
- */
+
 function computeInputData(manager, input) {
     var session = manager.session;
     var pointers = input.pointers;
     var pointersLength = pointers.length;
 
-    // store the first input to calculate the distance and direction
     if (!session.firstInput) {
         session.firstInput = simpleCloneInputData(input);
     }
 
-    // to compute scale and rotation we need to store the multiple touches
     if (pointersLength > 1 && !session.firstMultiple) {
         session.firstMultiple = simpleCloneInputData(input);
     } else if (pointersLength === 1) {
@@ -565,7 +407,6 @@ function computeInputData(manager, input) {
 
     computeIntervalInputData(session, input);
 
-    // find the correct target
     var target = manager.element;
     if (hasParent(input.srcEvent.target, target)) {
         target = input.srcEvent.target;
@@ -595,11 +436,7 @@ function computeDeltaXY(session, input) {
     input.deltaY = prevDelta.y + (center.y - offset.y);
 }
 
-/**
- * velocity is calculated every x ms
- * @param {Object} session
- * @param {Object} input
- */
+
 function computeIntervalInputData(session, input) {
     var last = session.lastInterval || input,
         deltaTime = input.timeStamp - last.timeStamp,
@@ -617,7 +454,6 @@ function computeIntervalInputData(session, input) {
 
         session.lastInterval = input;
     } else {
-        // use latest velocity info if it doesn't overtake a minimum period
         velocity = last.velocity;
         velocityX = last.velocityX;
         velocityY = last.velocityY;
@@ -630,14 +466,8 @@ function computeIntervalInputData(session, input) {
     input.direction = direction;
 }
 
-/**
- * create a simple clone from the input used for storage of firstInput and firstMultiple
- * @param {Object} input
- * @returns {Object} clonedInputData
- */
 function simpleCloneInputData(input) {
-    // make a simple copy of the pointers because we will get a reference if we don't
-    // we only need clientXY for the calculations
+
     var pointers = [];
     var i = 0;
     while (i < input.pointers.length) {
@@ -657,15 +487,10 @@ function simpleCloneInputData(input) {
     };
 }
 
-/**
- * get the center of all the pointers
- * @param {Array} pointers
- * @return {Object} center contains `x` and `y` properties
- */
+
 function getCenter(pointers) {
     var pointersLength = pointers.length;
 
-    // no need to loop when only one touch
     if (pointersLength === 1) {
         return {
             x: round(pointers[0].clientX),
@@ -686,13 +511,7 @@ function getCenter(pointers) {
     };
 }
 
-/**
- * calculate the velocity between two points. unit is in px per ms.
- * @param {Number} deltaTime
- * @param {Number} x
- * @param {Number} y
- * @return {Object} velocity `x` and `y`
- */
+
 function getVelocity(deltaTime, x, y) {
     return {
         x: x / deltaTime || 0,
@@ -700,12 +519,7 @@ function getVelocity(deltaTime, x, y) {
     };
 }
 
-/**
- * get the direction between two points
- * @param {Number} x
- * @param {Number} y
- * @return {Number} direction
- */
+
 function getDirection(x, y) {
     if (x === y) {
         return DIRECTION_NONE;
@@ -717,13 +531,7 @@ function getDirection(x, y) {
     return y < 0 ? DIRECTION_UP : DIRECTION_DOWN;
 }
 
-/**
- * calculate the absolute distance between two points
- * @param {Object} p1 {x, y}
- * @param {Object} p2 {x, y}
- * @param {Array} [props] containing x and y keys
- * @return {Number} distance
- */
+
 function getDistance(p1, p2, props) {
     if (!props) {
         props = PROPS_XY;
@@ -734,13 +542,7 @@ function getDistance(p1, p2, props) {
     return Math.sqrt((x * x) + (y * y));
 }
 
-/**
- * calculate the angle between two coordinates
- * @param {Object} p1
- * @param {Object} p2
- * @param {Array} [props] containing x and y keys
- * @return {Number} angle
- */
+
 function getAngle(p1, p2, props) {
     if (!props) {
         props = PROPS_XY;
@@ -750,23 +552,12 @@ function getAngle(p1, p2, props) {
     return Math.atan2(y, x) * 180 / Math.PI;
 }
 
-/**
- * calculate the rotation degrees between two pointersets
- * @param {Array} start array of pointers
- * @param {Array} end array of pointers
- * @return {Number} rotation
- */
+
 function getRotation(start, end) {
     return getAngle(end[1], end[0], PROPS_CLIENT_XY) + getAngle(start[1], start[0], PROPS_CLIENT_XY);
 }
 
-/**
- * calculate the scale factor between two pointersets
- * no scale is 1, and goes down to 0 when pinched together, and bigger when pinched out
- * @param {Array} start array of pointers
- * @param {Array} end array of pointers
- * @return {Number} scale
- */
+
 function getScale(start, end) {
     return getDistance(end[0], end[1], PROPS_CLIENT_XY) / getDistance(start[0], start[1], PROPS_CLIENT_XY);
 }
@@ -780,11 +571,7 @@ var MOUSE_INPUT_MAP = {
 var MOUSE_ELEMENT_EVENTS = 'mousedown';
 var MOUSE_WINDOW_EVENTS = 'mousemove mouseup';
 
-/**
- * Mouse events input
- * @constructor
- * @extends Input
- */
+
 function MouseInput() {
     this.evEl = MOUSE_ELEMENT_EVENTS;
     this.evWin = MOUSE_WINDOW_EVENTS;
