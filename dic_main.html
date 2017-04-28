@@ -39,8 +39,18 @@
 <script>
 	function resizeDiv(){
 		var winHeight = $(window).height();
-    	var headerHeight = $(".navtop").outerHeight();
-    	$('#shade').height(winHeight - headerHeight);
+		var headerHeight = $(".navtop").outerHeight();
+		if(winHeight >= 1023){
+			if(winHeight >= 1365){
+				$('#shade').height(winHeight - headerHeight + 100);
+			}
+			else{
+				$('#shade').height(winHeight - headerHeight + 65);
+			}
+		}
+		else{
+			$('#shade').height(winHeight - headerHeight);
+		}
 	}
 </script>
 
