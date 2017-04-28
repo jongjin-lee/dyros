@@ -1,4 +1,4 @@
-# Mobile Web UI Test
+# Mobile Web UI 
 
-**Example link : dyros-ui.ml<BR>
-**Responsive web test link : troy.labs.daum.net에 접속해 example link 입력
+**Example link : dyros-ui.ml<br>
+**Responsive web test link : troy.labs.daum.net 접속 후, example link 입력
